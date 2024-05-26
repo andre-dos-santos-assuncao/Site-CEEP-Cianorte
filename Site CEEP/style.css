@@ -1,0 +1,107 @@
+body {
+    background-color:rgb(225, 197, 197);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+header {
+    background-color: rgb(219, 15, 15);
+    position: sticky;
+    top: 0;
+}
+
+.titulo {
+    height: 107px;
+}
+
+.titulo a {
+    font-size: 35px;
+    font-weight: bold;
+    padding: 0.6em;
+    margin-top: 0.4em;
+    margin-left: 3.4em;
+    position: absolute;
+    color: white;
+    text-decoration: none;
+}
+
+.logo-ceep {
+    width: 100px;
+    height: 100px;
+    background-image: url(Assets/Logo-CEEP.png);
+    background-size: cover;
+    position: absolute;
+    margin-top: 0.2em; 
+    margin-left: 0.4em;
+}
+
+.logo-ceep:hover {
+    opacity: 0.9;
+}
+
+.titulo a:hover {
+    border: 1px solid white;
+}
+
+nav {
+    height: 55px;
+    background-color: rgb(232, 69, 69);
+}
+
+.nav ul li {
+    display: inline;
+    font-size: 22px;
+    color: white;
+    position: absolute;
+    padding: 0.7em 1.46em;
+}
+
+.nav ul li:hover {
+    border: 1.5px solid white;
+    background-color: rgb(222, 48, 48);
+}
+
+.nav ul li:last-child:hover {
+    border: 1.5px solid white;
+    background-color: rgba(76, 0, 0, 0.684);
+}
+
+
+.nav ul li:active {
+    background-color: rgb(174, 24, 24);
+}
+
+.traco {
+    height: 25px;
+    border-right: 1px solid white;
+    position: absolute;
+    margin-left: 4.84em;
+    margin-bottom: 1em;
+    margin-top: 0.1em;
+}
+
+.traco1 {
+    height: 25px;
+    border-right: 1px solid white;
+    position: absolute;
+    margin-left: 5.29em;
+    margin-bottom: 1em;
+    margin-top: 0.1em;
+}
+
+li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.contato {
+    margin: 0 0 0 6.3em;
+}
+
+.localizacao {
+    margin: 0 0 0 13.05em;
+}
+
+.matricula {
+    margin: 0 0 0 50.69em;
+}
