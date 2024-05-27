@@ -5,6 +5,7 @@ body {
 
 header {
     background-color: rgb(219, 15, 15);
+    min-width: 1280px;
     position: sticky;
     top: 0;
 }
@@ -35,6 +36,8 @@ header {
 }
 
 .logo-ceep:hover {
+    width: 101px;
+    height: 101px;
     opacity: 0.9;
 }
 
@@ -42,66 +45,112 @@ header {
     border: 1px solid white;
 }
 
-nav {
-    height: 55px;
-    background-color: rgb(232, 69, 69);
+header ul {
+    background-color: rgb(222, 84, 84);
+    height: 50px;
 }
 
-.nav ul li {
+header ul li {
     display: inline;
-    font-size: 22px;
-    color: white;
-    position: absolute;
-    padding: 0.7em 1.46em;
+    font-size: 0;
+    position: relative;
 }
 
-.nav ul li:hover {
-    border: 1.5px solid white;
-    background-color: rgb(222, 48, 48);
-}
-
-.nav ul li:last-child:hover {
-    border: 1.5px solid white;
-    background-color: rgba(76, 0, 0, 0.684);
-}
-
-
-.nav ul li:active {
-    background-color: rgb(174, 24, 24);
-}
-
-.traco {
-    height: 25px;
-    border-right: 1px solid white;
-    position: absolute;
-    margin-left: 4.84em;
-    margin-bottom: 1em;
-    margin-top: 0.1em;
-}
-
-.traco1 {
-    height: 25px;
-    border-right: 1px solid white;
-    position: absolute;
-    margin-left: 5.29em;
-    margin-bottom: 1em;
-    margin-top: 0.1em;
-}
-
-li a {
-    color: white;
+header ul li a{
+    font-size: 20px;
+    padding: 0.75em 1em;
+    float: left;
     text-decoration: none;
+    color: white;
     font-weight: bold;
 }
 
-.contato {
-    margin: 0 0 0 6.3em;
+header ul li button {
+    font-size: 20px;
+    padding: 0.65em 1em 0.65em 2.4em;
+    float: left;
+    text-decoration: none;
+    border: none;
+    color: white;
+    font-weight: bold;
+    background-color:  rgb(222, 84, 84);
 }
 
-.localizacao {
-    margin: 0 0 0 13.05em;
+header ul li button:hover {
+    border: 1.5px solid white;
+    background-color: rgb(218, 65, 65);
+    cursor: pointer;
 }
 
-.matricula {
-    margin: 0 0 0 50.69em;
+header ul li button:active {
+    background-color: rgb(212, 34, 34);
+}
+
+header ul li div {
+    height: 1px;
+    width: 1px;
+    position: relative;
+    bottom: 12px;
+    right: 2.4px;
+}
+
+.menui {
+    top: 7px;
+    height: 35px;
+    width: 35px;
+    background-image: url(Assets/Menu.png);
+    background-size: cover;
+    position: absolute;
+}
+
+header ul li a:hover, .dropdown:hover .dropbtn {
+    border: 1.5px solid white;
+    background-color: rgb(218, 65, 65);
+}
+
+header ul li a:active, .drop .dropdown-content a:active {
+    background-color: rgb(212, 34, 34);
+}
+
+.Matricula {
+    float: right;
+}
+
+.Matricula:hover {
+    background-color: rgb(131, 33, 33);
+}
+
+.Matricula:active {
+    background-color: rgb(113, 16, 16);
+}
+
+li .dropdown {
+    display: inline-block;
+}
+
+.dropdown .drop {
+    left: 123.5px;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 62.7px;
+
+}
+
+.dropdown-content a {
+    background-color: rgb(255, 68, 68);
+    font-size: 15px;
+    padding: 0.75em;
+    width: 120px;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: rgb(244, 84, 84);
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
 }
