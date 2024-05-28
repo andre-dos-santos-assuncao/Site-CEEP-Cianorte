@@ -1,43 +1,43 @@
 body {
     background-color:rgb(225, 197, 197);
+    background-image: linear-gradient(to bottom left, rgb(240, 175, 175), rgb(226, 201, 201));
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 header {
     background-color: rgb(219, 15, 15);
-    min-width: 1280px;
-    position: sticky;
+    min-width: 1240px;
     top: 0;
 }
 
 .titulo {
-    height: 107px;
+    height: 98px;
 }
 
 .titulo a {
     font-size: 35px;
     font-weight: bold;
     padding: 0.6em;
-    margin-top: 0.4em;
-    margin-left: 3.4em;
+    margin-top: 0.3em;
+    margin-left: 3.15em;
     position: absolute;
     color: white;
     text-decoration: none;
 }
 
 .logo-ceep {
-    width: 100px;
-    height: 100px;
+    width: 90px;
+    height: 90px;
     background-image: url(Assets/Logo-CEEP.png);
     background-size: cover;
     position: absolute;
-    margin-top: 0.2em; 
-    margin-left: 0.4em;
+    margin-top: 0.25em; 
+    margin-left: 0.8em;
 }
 
 .logo-ceep:hover {
-    width: 101px;
-    height: 101px;
+    width: 91px;
+    height: 91px;
     opacity: 0.9;
 }
 
@@ -47,7 +47,7 @@ header {
 
 header ul {
     background-color: rgb(222, 84, 84);
-    height: 50px;
+    height: 45px;
 }
 
 header ul li {
@@ -58,7 +58,7 @@ header ul li {
 
 header ul li a{
     font-size: 20px;
-    padding: 0.75em 1em;
+    padding: 0.6em 1em;
     float: left;
     text-decoration: none;
     color: white;
@@ -67,7 +67,7 @@ header ul li a{
 
 header ul li button {
     font-size: 20px;
-    padding: 0.65em 1em 0.65em 2.4em;
+    padding: 0.5em 1em 0.5em 2.4em;
     float: left;
     text-decoration: none;
     border: none;
@@ -108,41 +108,65 @@ header ul li a:hover, .dropdown:hover .dropbtn {
     background-color: rgb(218, 65, 65);
 }
 
-header ul li a:active, .drop .dropdown-content a:active {
+header ul li a:active, .drop .dropdown-content a:active,
+header ul li .drop1 .dropdown-content a:active, 
+header ul li .drop2 .dropdown-content a:active, 
+header ul li .drop4 .dropdown-content a:active, 
+.dropdown .dropbtn:active {
     background-color: rgb(212, 34, 34);
 }
 
-.Matricula {
+.Matricula, #login {
+    top: 0px;
     float: right;
 }
 
-.Matricula:hover {
+.Matricula:hover, #login:hover {
     background-color: rgb(131, 33, 33);
 }
 
-.Matricula:active {
+.Matricula:active, #login:active {
     background-color: rgb(113, 16, 16);
 }
 
-li .dropdown {
-    display: inline-block;
+.dropdown .drop1 .dropdown-content a {
+    width: 225px;
+}
+
+.dropdown .drop4 .dropdown-content a {
+    width: 98px;
 }
 
 .dropdown .drop {
-    left: 123.5px;
+    left: 124px;
+}
+
+.dropdown .drop1 {
+    left: 232px;
+}
+
+.dropdown .drop2 {
+    left: 348.5px;
+}
+
+.dropdown .drop3 {
+    left: 509.5px;
+}
+
+.dropdown .drop4 {
+    left: 1138px;
 }
 
 .dropdown-content {
     display: none;
     position: absolute;
-    top: 62.7px;
-
+    top: 57.5px;
 }
 
 .dropdown-content a {
     background-color: rgb(255, 68, 68);
     font-size: 15px;
-    padding: 0.75em;
+    padding: 0.9em;
     width: 120px;
     text-align: left;
 }
@@ -153,4 +177,68 @@ li .dropdown {
 
 .dropdown:hover .dropdown-content {
     display: block;
+}
+
+main section .sobre {
+    height: 600px;
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    margin-bottom: 75px;
+    background-image: linear-gradient(to top left,  #f68181, rgb(254, 94, 94));
+}
+
+.sobre .img {
+    float: left;
+    max-width: 100%;
+    max-height: 65%;
+    margin: 5px 25px 5px 5px;  
+}
+
+.sobre .img:hover {
+    opacity: 0.96;
+    max-height: 65.1%;
+}
+
+.content {
+    border: 1.5px solid white;
+}
+
+.sobre {
+    box-shadow: 7px 7px 12px rgb(228, 87, 87);
+}
+
+.sobre h2 {
+    padding: 1em 0.75em 0.5em 0.75em;
+    font-size: 25px;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.sobre p {
+   font-size: 20px;
+   color: white;
+   margin: 0.7em 1em 0.75em 0.75em;
+   text-indent: 35px;
+   font-weight: 900;
+   line-height: 1.75em;
+   word-spacing: 0.2em;
+   text-align: justify;
+}
+
+footer .foot {
+    height: 200px;
+    width: 100%;
+    background-color: #535353;
+}
+
+.criadores {
+    float: right;
+}
+
+.img-footer {
+    max-width: 8%;
 }
