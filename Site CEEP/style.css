@@ -4,16 +4,19 @@ body {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
+/* estiliza a tag header */
 header {
     background-color: rgb(187, 0, 0);
     min-width: 1240px;
     top: 0;
 }
 
+/* estiliza a div com a classe titulo */
 .titulo {
     height: 98px;
 }
 
+/* estiliza todos os links dentro do titulo, que no caso é o "CEEP-Cianorte" */
 .titulo a {
     font-size: 35px;
     font-weight: bold;
@@ -25,6 +28,7 @@ header {
     text-decoration: none;
 }
 
+/* estiliza a logo da escola */
 .logo-ceep {
     width: 90px;
     height: 90px;
@@ -35,6 +39,7 @@ header {
     margin-left: 0.8em;
 }
 
+/* estiliza a logo do governo do paraná */
 .logo-parana {
     width: 150px;
     height: 90px;
@@ -45,27 +50,32 @@ header {
     right: 1em;
 }
 
+/* estiliza a logo da escola quando o mouse passar por cima */
 .logo-ceep:hover {
     width: 91px;
     height: 91px;
     opacity: 0.9;
 }
 
+/* estilaza o "CEEP-Cianorte" quando o mouse passar por cima */
 .titulo a:hover {
     border: 1px solid white;
 }
 
+/* estiliza a ul da parte da navegação */
 header ul {
     background-color: rgb(222, 84, 84);
     height: 45px;
 }
 
+/* estiliza cada li da ul */
 header ul li {
     display: inline;
     font-size: 0;
     position: relative;
 }
 
+/* estiliza os links das li */
 header ul li a{
     font-size: 20px;
     padding: 0.6em 1em;
@@ -75,6 +85,7 @@ header ul li a{
     font-weight: bold;
 }
 
+/* estiliza o botão de menu */
 header ul li button {
     font-size: 20px;
     padding: 0.5em 1em 0.5em 2.4em;
@@ -86,16 +97,19 @@ header ul li button {
     background-color:  rgb(222, 84, 84);
 }
 
+/* estiliza o botão do menu com o passar do mouse */
 header ul li button:hover {
     border: 1.5px solid white;
     background-color: rgb(218, 65, 65);
     cursor: pointer;
 }
 
+/* estiliza p botão do menu quando for clicado */
 header ul li button:active {
     background-color: rgb(212, 34, 34);
 }
 
+/* estiliza a div do botão */
 header ul li div {
     height: 1px;
     width: 1px;
@@ -104,6 +118,7 @@ header ul li div {
     right: 2.4px;
 }
 
+/* estiliza a imagem que esta junta do botão */
 .menui {
     top: 7px;
     height: 35px;
@@ -113,11 +128,15 @@ header ul li div {
     position: absolute;
 }
 
+/* faz o efeito de passar com o mouse em todos os
+ links da nav */
 header ul li a:hover, .dropdown:hover .dropbtn {
     border: 1.5px solid white;
     background-color: rgb(218, 65, 65);
 }
 
+/* faz o efeito do clique em todos os links da nav e
+os links do DropDown*/
 header ul li a:active, .drop .dropdown-content a:active,
 header ul li .drop1 .dropdown-content a:active, 
 header ul li .drop2 .dropdown-content a:active, 
@@ -126,57 +145,65 @@ header ul li .drop4 .dropdown-content a:active,
     background-color: rgb(212, 34, 34);
 }
 
+/* estiliza os links da matricula e do login do lado direito */
 .Matricula, #login {
     top: 0px;
     float: right;
 }
 
+/* faz o efeito de passar por cima do login e da matricula */
 .Matricula:hover, #login:hover {
     background-color: rgb(131, 33, 33);
 }
 
+/* faz o efeito de clique no login e na matricula */
 .Matricula:active, #login:active {
     background-color: rgb(113, 16, 16);
 }
 
+/* estiliza cada link do DropDown dos Contatos */
 .dropdown .drop1 .dropdown-content a {
     width: 225px;
 }
 
+/* estiliza os links do DropDown do login*/
 .dropdown .drop4 .dropdown-content a {
-    width: 98px;
+    width: 12.25vh;
 }
 
+/* estiliza a div do DropDown dos cursos */
 .dropdown .drop {
     left: 124px;
 }
 
+/* estiliza a div do DropDown dos contatos */
 .dropdown .drop1 {
     left: 232px;
 }
 
+/* estiliza a div do DropDown dos laboratorios */
 .dropdown .drop2 {
     left: 348.5px;
 }
 
+/* estiliza a div da localização*/
 .dropdown .drop3 {
     left: 509.5px;
 }
 
+/* estiliza a div do login*/
 .dropdown .drop4 {
     float: right;
 }
 
-.log {
-    max-width: 75px;
-}
-
+/* estiliza a div em que os links do DropDown estão inceridos */
 .dropdown-content {
     display: none;
     position: absolute;
     top: 57.5px;
 }
 
+/* estiliza os links de todos os DropDown */
 .dropdown-content a {
     background-color: rgb(255, 68, 68);
     font-size: 15px;
@@ -185,14 +212,17 @@ header ul li .drop4 .dropdown-content a:active,
     text-align: left;
 }
 
+/* faz o efeito de passar com o mouse em todos os links do DropDown */
 .dropdown-content a:hover {
     background-color: rgb(244, 84, 84);
 }
 
+/* quando passar o mouse sobre os links da nav, faz com que os DropDown apareçam */
 .dropdown:hover .dropdown-content {
     display: block;
 }
 
+/* estiliza a div em que a foto e os textos estão presentes */
 main section .sobre {
     height: 600px;
     width: 1200px;
@@ -200,9 +230,11 @@ main section .sobre {
     margin-right: auto;
     margin-top: 50px;
     margin-bottom: 75px;
+    box-shadow: 7px 7px 12px rgb(242, 89, 89);
     background-image: linear-gradient(to top left,  #f68181, rgb(254, 94, 94));
 }
 
+/* estiliza a imagem do CEEP que esta dentro do sobre*/
 .sobre .img {
     float: left;
     max-width: 100%;
@@ -210,20 +242,19 @@ main section .sobre {
     margin: 5px 25px 5px 5px;  
 }
 
+/* faz o efeito de passar com o mouse na imagem */
 .sobre .img:hover {
     opacity: 0.96;
     max-height: 65.1%;
 }
 
+/* estiliza a div que contem a div sobre */
 .content {
     min-width: 1240px;
     border: 1.5px solid white;
 }
 
-.sobre {
-    box-shadow: 7px 7px 12px rgb(242, 89, 89);
-}
-
+/* estiliza o titulo do sobre */
 .sobre h2 {
     padding: 1em 0.75em 0.5em 0.75em;
     font-size: 25px;
@@ -233,6 +264,7 @@ main section .sobre {
     text-align: center;
 }
 
+/* estiliza os paragrafos do sobre */
 .sobre p {
    font-size: 20px;
    color: white;
@@ -244,6 +276,7 @@ main section .sobre {
    text-align: justify;
 }
 
+/* estiliza a div que contem os elementos do footer */
 footer .foot {
     min-width: 1240px;
     height: 300px;
@@ -251,26 +284,31 @@ footer .foot {
     background-color: #535353;
 }
 
+/* estiliza os paragrafos do footer */
 .foot p {
     margin-top: 0.5em;
     line-height: 2em;
     color: white;
 }
 
+/* estiliza o segundo filho da div foot, que é "Endereço: R. Dom Pedro II,
+ 1550 -Zona 01," */
 .foot p:nth-child(2) {
     margin-top: 1.5em;
 }
 
-
+/* estiliza o terceiro filho da div foot */
 .foot p:nth-child(3) {
     max-width: 350px;
     border-top: 0.5px solid white;
 }
 
+/* estiliza o paragrafo da div foot com a classe criadores */
 .criadores {
     float: right;
 }
 
+/* estiliza a logo do CEEP do footer */
 .img-footer {
     max-width: 8%;
 }
