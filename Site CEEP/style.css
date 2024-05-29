@@ -7,7 +7,6 @@ body {
 /* estiliza a tag header */
 header {
     background-color: rgb(187, 0, 0);
-    min-width: 1240px;
     top: 0;
 }
 
@@ -70,7 +69,8 @@ header ul {
 
 /* estiliza cada li da ul */
 header ul li {
-    display: inline;
+    display: flexbox;
+    flex-direction: row;
     font-size: 0;
     position: relative;
 }
@@ -224,8 +224,8 @@ header ul li .drop4 .dropdown-content a:active,
 
 /* estiliza a div em que a foto e os textos estão presentes */
 main section .sobre {
-    height: 600px;
-    width: 1200px;
+    max-width: 1000px;
+    max-height: 5%;
     margin-left: auto;
     margin-right: auto;
     margin-top: 50px;
@@ -237,8 +237,7 @@ main section .sobre {
 /* estiliza a imagem do CEEP que esta dentro do sobre*/
 .sobre .img {
     float: left;
-    max-width: 100%;
-    max-height: 65%;
+    max-width: 50%;
     margin: 5px 25px 5px 5px;  
 }
 
@@ -250,7 +249,6 @@ main section .sobre {
 
 /* estiliza a div que contem a div sobre */
 .content {
-    min-width: 1240px;
     border: 1.5px solid white;
 }
 
@@ -278,7 +276,6 @@ main section .sobre {
 
 /* estiliza a div que contem os elementos do footer */
 footer .foot {
-    min-width: 1240px;
     height: 300px;
     width: 100%;
     background-color: #535353;
@@ -311,4 +308,76 @@ footer .foot {
 /* estiliza a logo do CEEP do footer */
 .img-footer {
     max-width: 8%;
+}
+
+
+
+/* Smartphones (600px para baixo) */
+@media only screen and (max-width: 600px) {
+    header {   
+        max-width: 100vh;
+    }
+
+    .titulo a {
+        padding: 0.4em;
+        margin: 5.1% 0 0 25%;
+        font-size: 25px;
+    }
+
+    .logo-ceep {
+        width: 80px;
+        height: 80px;
+    }
+
+    .logo-parana {
+        width: 120px;
+        height: 75px;
+        right: 0.1em;
+        top: 0.5em;
+    }
+
+    header ul li a{
+        display: none;
+    }
+
+    main section .sobre {
+        width: 90%;
+    }
+
+    main section .sobre p{
+        font-size: 16px;
+    }
+
+     section .sobre .img{
+        min-width: 95%;
+    }
+
+    footer .foot {
+        height: 250px;
+    }
+
+    .foot .img-footer {
+        max-width: 20%;
+    }
+
+}
+
+/* Dispositivos um pouco maiores, mas ainda pequenos (Pequenos Tablets e Smartphones + largos, 600px para cima) */
+@media only screen and (min-width: 600px) {
+
+}
+
+/*Dispostivos Médios (Tablets deitados, 768px para cima) */
+@media only screen and (min-width: 768px) {
+
+}
+
+/* Dispostivos Largos (laptops/desktops, 992px para cima) */
+@media only screen and (min-width: 992px) {
+
+}
+
+/* Super Largos (Telas maiores laptops, desktops e até TVs, 1200px para cima) */
+@media only screen and (min-width: 1200px) {
+
 }
